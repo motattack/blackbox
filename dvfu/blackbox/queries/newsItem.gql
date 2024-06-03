@@ -1,0 +1,12 @@
+query newsItem($id: ID!) {
+  __typename
+  newsItem(id: $id) {
+    __typename
+    id
+    title
+    detail
+    start_at
+    previewImageUrl
+    albumImagesUrl
+  }
+}

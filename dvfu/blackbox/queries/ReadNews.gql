@@ -1,0 +1,11 @@
+query ReadNews($catalogCodes: [String!]!) {
+    __typename
+    news(catalog_codes: $catalogCodes) {
+        __typename
+        id
+        title
+        preview
+        start_at
+        previewImageUrl
+    }
+}

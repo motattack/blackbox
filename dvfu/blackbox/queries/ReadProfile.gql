@@ -1,0 +1,23 @@
+query ReadProfile {
+    __typename
+    userProfile {
+        __typename
+        id
+        first_name
+        middle_name
+        last_name
+        fullName
+        guid
+        email
+        birthday
+        studentProfiles {
+            __typename
+            academicGroup {
+                __typename
+                name
+                id
+            }
+        }
+        roles
+    }
+}

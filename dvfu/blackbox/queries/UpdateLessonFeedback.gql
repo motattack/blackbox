@@ -1,0 +1,17 @@
+mutation UpdateLessonFeedback {
+  __typename
+  createLessonFeedback(lessonGuid: "#LESSON_GUID#", interest: #LESSON_INTEREST#, usefulness: #LESSON_USEFULNESS#, clarity: #LESSON_CLARITY#, violationId: #LESSON_VIOLATION_ID#, comment: "#LESSON_COMMENT#") {
+    __typename
+    interest
+    usefulness
+    clarity
+    comment
+    violation {
+      __typename
+      id
+      name
+    }
+    created_at
+    updated_at
+  }
+}

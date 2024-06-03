@@ -1,0 +1,21 @@
+query ReadLessonFeedback {
+  __typename
+  lessonFeedback(lessonGuid: "#LESSON_GUID#") {
+    __typename
+    canRate
+    lessonFeedback {
+      __typename
+      interest
+      usefulness
+      clarity
+      comment
+      violation {
+        __typename
+        id
+        name
+      }
+      created_at
+      updated_at
+    }
+  }
+}
