@@ -4,8 +4,8 @@
 
 Библиотека работает в синхронном и асинхронном режиме:
 ```py
-from dvfu.esa import EsaClient, AsyncBlackBoxClient
-from dvfu.blackbox import BlackBoxClient, AsyncEsaClient
+from dvfu.esa import EsaClient, AsyncEsaClient
+from dvfu.blackbox import BlackBoxClient, AsyncBlackBoxClient
 ```
 
 ## Установка
